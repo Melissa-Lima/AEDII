@@ -1,0 +1,25 @@
+# Introdução
+
+Para a elaboração do projeto, foi utilizado o algoritmo de Hash visto durante o curso e o algoritmo de compressão LZW.
+A ideia inicial era dar a possibilidade do usuário escolher entre os 3 tipos de tabela Hash na linha de comando e poder codificar frases
+ao invés de apenas palavras. Porém, por falta de tempo, o programa foi simplificado de tal forma que o usuário não escolhe 
+o tipo de tabela hash (foi usada a de encadeamento) e codificação de apenas palavras ao invés de frases, pois não estava
+conseguindo resolver problemas com os caracteres de \n na função fgets. O código principal contém comentários para auxiliar no entendimento
+do programa.
+
+# Descrição
+
+Este projeto consiste na criação de uma tabela hash com palavras dadas pelo usuário e logo após armazenar a palavra na tabela hash,
+a palavra é comprimida utilizando o algoritmo de compressão LZW e printa na tela o resultado final do dicionário e da compressão
+final.
+
+# Manual de Uso
+
+Compilação:
+g++ projeto.cpp main.cpp -o projeto
+Entrada:
+Primeiro: n = quantidade de palavras que serão armazenadas na tabela hash e codificadas.
+Segundo: Palavra (irá repetir n vezes)
+
+
+Problemas: O programa possui um problema no malloc da segunda palavra e não consegui resolver a tempo.
